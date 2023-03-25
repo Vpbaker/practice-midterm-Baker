@@ -1,13 +1,13 @@
 ---
 title: "EAES 420 Midterm Starter"
-author: "Enter your name"
-date: "Enter the date"
+author: "Vincent Baker"
+date: "3/24/23"
 output: html_document
 ---
 
 ## Academic Honesty Statement
 
-*I, \_\_\_\_\_\_\_\_\_\_\_\_\_, hereby state that I will not communicate with or gain information in any way from my classmates, or copy work from past assignments, during this exam, and that all work is my own.*
+*I, Vincent Baker, hereby state that I will not communicate with or gain information in any way from my classmates, or copy work from past assignments, during this exam, and that all work is my own.*
 
 ## Load packages
 
@@ -20,7 +20,7 @@ library(openintro)
 
 ### Exericse 1
 
-[Enter code and/or narrative here.]
+
 
 ### Exericse 2
 
