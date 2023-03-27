@@ -57,7 +57,17 @@ earthquakes %>%
 
 ### Exericse 5
 
-[Enter code and/or narrative here.]
+```{r visualize-earthquake-richter, eval = T}
+earthquakes %>% 
+  filter(region %in% c("Turkey", "Iran", "China", "Japan", "United States")) %>% 
+      ggplot(aes(x = richter, fill = region)) +
+      geom_histogram(binwidth = 0.5) +
+      facet_wrap(~region, 
+             ncol = 3) +
+      theme_classic()
+```
+
+The average richter value for all of these regions seems to be ~7-7.5. I don't think this average depends on the region because all of the histograms show that the majority of earthquakes in each region are about 7.5 magnitude. 
 
 ### Exericse 6
 
