@@ -82,14 +82,34 @@ Two rows have been removed from this new dataset.
 
 ### Exericse 7
 
-```{r visualize-earthquakes-deaths, eval = F}
+```{r visualize-earthquakes-deaths, eval = T}
 earthquakes_subset %>% 
   ggplot(aes(x = month, y = deaths)) +
   geom_violin() +
   theme_classic()
 ```
 
-[Enter code and/or narrative here.]
+The first observation in this dataset occurred in 1902 of April, so it's the first month on the plot instead of January. 'month' might be labeled as a numeric data type and not as a character data type. 
+
+```{r recode-month-levels, eval = T}
+earthquakes_subset %>% 
+  mutate("month" = fct_relevel(month,
+                             "January",
+                             "February",
+                             "March",
+                             "April",
+                             "May",
+                             "June",
+                             "July",
+                             "August",
+                             "September",
+                             "October",
+                             "November",
+                             "December")) %>% 
+    ggplot(aes(x = month, y = deaths)) +
+    geom_violin() +
+    theme_classic()
+```
 
 ### Exericse 8
 
