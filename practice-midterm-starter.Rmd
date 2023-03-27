@@ -20,11 +20,21 @@ library(openintro)
 
 ### Exericse 1
 
+```{r earhtquakes}
+glimpse(earthquakes)
+```
 
+1) There are 123 rows and 7 variables in the dataset. 
+
+2) Three variables are categorical and the other four are numerical. 
 
 ### Exericse 2
 
-[Enter code and/or narrative here.]
+```{r earthquakes-names}
+names(earthquakes)
+```
+
+"area of world" shows specific states, countries, and/or provinces, so maybe it's a general term, and "region" is specifically listing the countries where these earthquakes have been recorded. 
 
 ### Exericse 3
 
