@@ -46,7 +46,14 @@ I could have also used '%>%' and the 'group_by' function to check the number of 
 
 ### Exericse 4
 
-[Enter code and/or narrative here.]
+```{r visualize-earthquake-regions, eval = T}
+earthquakes %>% 
+  filter(region %in% c("Turkey", "Iran", "China", "Japan", "United States")) %>% 
+  ggplot(aes(x = region)) +
+  geom_bar() +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle=90, hjust=1))
+```
 
 ### Exericse 5
 
