@@ -71,7 +71,14 @@ The average richter value for all of these regions seems to be ~7-7.5. I don't t
 
 ### Exericse 6
 
-[Enter code and/or narrative here.]
+```{r earthquakes-subset}
+earthquakes_subset <- earthquakes %>%
+  select(richter, year, month, deaths) %>%
+  filter(!is.na(deaths))
+earthquakes_subset
+```
+
+Two rows have been removed from this new dataset. 
 
 ### Exericse 7
 
