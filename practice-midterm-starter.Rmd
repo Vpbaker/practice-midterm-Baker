@@ -38,7 +38,11 @@ names(earthquakes)
 
 ### Exericse 3
 
-[Enter code and/or narrative here.]
+```{r regional-observations}
+count(earthquakes, region, wt = NULL, sort = TRUE)
+```
+
+I could have also used '%>%' and the 'group_by' function to check the number of observations in each region. 
 
 ### Exericse 4
 
